@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Grades</title>
+    <link rel ="stylesheet" href ="{{ url_for('static',filename='css/style.css')}}">
+    <script type ='text/javascript' src="{{ url_for('static',filename='script/script.js')}}">
+
+    </script>
+</head>
+<body>
+    <h2>Enter Grades for Four Subjects</h2>
+
+    <form action="/submit" method="post">
+        <label for="Science">Science:</label><br>
+        <input type="text" id="Science" name="Science" required><br>
+
+        <label for="Maths"> Maths:</label>
+        <input type="text"id="Maths" name="Maths" required><br>
+
+        <label for="C">Subject 3:</label>
+        <input type="text" id="C"name="C" required><br>
+
+        <label for="datascience">Subject 4:</label>
+        <input type="text"id="datascience" name="datascience" required><br>
+.
+        <input type="submit"value="Submit">
+    </form>
+</body>
+</html>
